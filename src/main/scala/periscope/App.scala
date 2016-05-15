@@ -10,12 +10,6 @@ case class Instructions(
 )
 
 object App {
-
-  def parseCoordinates(src: String) = src.split(" ").toSeq match {
-    case Seq(x, y) => Coordinates(x.toInt, y.toInt)
-    case coordinates => throw new Error(s"Unable to parse coordinates $coordinates")
-  }
-
   /**
     * Given a series of lines, return the instructions.
     */
